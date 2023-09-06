@@ -1,0 +1,156 @@
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.grass {
+    background-color: #49d0b0;
+}
+.normal {
+    background-color: #a6a877;
+}
+.fire {
+    background-color: #f18f49;
+}
+.water {
+    background-color: #7fa1f0;
+}
+.electric {
+    background-color: #f3da77;
+}
+.ice {
+    background-color: #98d5d7;
+}
+.ground {
+    background-color: #dfbf69;
+}
+.flying {
+    background-color: #a98ff0;
+}
+.poison {
+    background-color: #c49ac4;
+}
+.fighting {
+    background-color: #b45c58;
+}
+.psychic {
+    background-color: #f988aa;
+}
+.dark {
+    background-color: #868584;
+}
+.rock {
+    background-color: #b3a35b;
+}
+.bug {
+    background-color: #b2b96f;
+}
+.ghost {
+    background-color: #7b6c97;
+}
+.steel {
+    background-color: #b9b7cf;
+}
+.dragon {
+    background-color: #a988fb;
+}
+.fairy {
+    background-color: #f9aec7;
+}
+
+.pokemon .identificador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon .name {
+    color: white;
+    margin: .25rem 0;
+    text-transform: capitalize;
+}
+
+.pokemon .number {
+    color: #000;
+    opacity: 0.3;
+    text-align: right;
+    font-size: .9rem;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    color: white;
+    padding: .5rem;
+    font-size: .625rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+    text-align: center;
+    filter: brightness(1.1);
+}
+
+.pokemons .detail img {
+    max-width: 100%;
+    height: 70px;
+    align-self: flex-end;
+}
+
+#pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+#pagination button {
+    background-color: #6c79db;
+    border: none;
+    width: 100%;
+    padding: .5rem;
+    font-size: .625rem;
+    margin: .25rem 0;
+    border-radius: 1rem;
+    color: white;
+}
+
+@media screen and (min-width: 320px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
